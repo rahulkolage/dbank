@@ -55,3 +55,11 @@ https://stackoverflow.com/questions/71926240/motoko-language-extension-in-vs-cod
 
 main.mo
 the methods like topUp or withdrawl in ICP are known as Update methods
+
+To run new UI
+- In terminal, install npm packages specified in pacakge.json using command "npm install"
+- Start local Internet computer using command "dfx start"
+- Split terminal or start another terminal
+- Enter command "dfx deploy" to deploy code into canister
+- Then enter command to run app "npm start"
+- In browser, use http://localhost:8080/ to access app

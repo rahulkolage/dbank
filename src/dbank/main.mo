@@ -13,7 +13,8 @@ import Float "mo:base/Float";
 actor DBank {
   // persisted variable using "stable" keyword
   stable var currentValue: Float = 300;
-  // currentValue := 300;
+  currentValue := 300;
+  Debug.print(debug_show(currentValue));
 
   // create constant
   // let id = 342424; // it act as constant
@@ -21,6 +22,7 @@ actor DBank {
   // Debug.print(debug_show(currentValue));
 
   stable var startTime = Time.now();
+  startTime := Time.now();
   Debug.print(debug_show(startTime));
 
   // creating function
@@ -46,7 +48,7 @@ actor DBank {
    // public func withdrawl(amount: Nat) {
   public func withdrawl(amount: Float) {
     let tempValue: Float = currentValue - amount;
-  // let tempValue: Int = currentValue - amount;
+    // let tempValue: Int = currentValue - amount;
 
     if (tempValue >= 0) {
       currentValue -= amount;
